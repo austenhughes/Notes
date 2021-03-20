@@ -1,15 +1,13 @@
-const notes = require('../db/db.json');
-
+const saved = require('../db/db.json');
 
 module.exports = (app) => {
 
-    app.get('/api/notes', (req, res) => res.json(notes));
-
+    app.get('/api/notes', (req, res) => res.json(saved)); 
+    
     app.post('/api/notes', (req, res) => {
-     
-            notes.push(req.body);
-            // res.json(req.body);
-            
+        const addNote = req.body
+        saved.push(addNote);
+        res.json(addNote);   
     })
 
 };
