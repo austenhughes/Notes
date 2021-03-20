@@ -1,5 +1,6 @@
 const saved = require('../db/db.json');
 const fs = require('fs');
+const uuid = require('uuidv4');
 
 module.exports = (app) => {
 
@@ -9,10 +10,16 @@ module.exports = (app) => {
     });
     
     app.post('/api/notes', (req, res) => {
-        const addNote = req.body
+
+        let addNote = req.body
+        let idNumber = (saved.length)
+        addNote.id = idNumber
+        // addNote.id = uuidv4();
         saved.push(addNote);
-        fs.writeFileSync(db.json, JSON.stringify(saved));
-        res.json(addNote);   
+        fs.writeFileSync('./db/db.json', JSON.stringify(saved));
+        res.json(addNote); 
+        // console.log(saved)  
+
     })
 
 };

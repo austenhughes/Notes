@@ -1,4 +1,3 @@
-// const saved = require('./db/db.json');
 const express = require('express');
 const app = express();
 
