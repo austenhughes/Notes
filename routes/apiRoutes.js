@@ -12,16 +12,18 @@ module.exports = (app) => {
     app.post('/api/notes', (req, res) => {
         let addNote = req.body
         let idNumber = uuid();
+
         addNote.id = idNumber;
+    
         saved.push(addNote);
+
         fs.writeFileSync('./db/db.json', JSON.stringify(saved));
         res.json(addNote); 
     });
 
     app.delete("/api/notes/:id", (req, res) => {
         let UniqId = (req.params.id);
-        console.log(UniqId);
-
+        
         saved = saved.filter(x =>
         x.id != UniqId); 
               
