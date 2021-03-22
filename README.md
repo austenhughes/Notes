@@ -10,7 +10,7 @@ to run on your localhost you will need :
 
 ## Directions :
 
-- you will open the program with the following link : https://github.com/austenhughes/Notes
+- you will open the program with the following link : https://vast-cliffs-58167.herokuapp.com/
 - this link will take you to opening page
 - you can then click the button to access the note taker
 - the note taker will present you 
@@ -24,22 +24,26 @@ to run on your localhost you will need :
 
 ## Visual aid :
 
+![](./pics/notetaker.png)
+
 ## Github :
 
 github repo : https://github.com/austenhughes/Notes
 
 ## Heroku :
 
+Heroku link : https://vast-cliffs-58167.herokuapp.com/
+
 ## Recourses :
 
-w3schools : https://www.w3schools.com/
-mozilla : https://developer.mozilla.org/en-US/
-stackoverflow : https://stackoverflow.com/
+w3schools : https://www.w3schools.com/ <br />
+mozilla : https://developer.mozilla.org/en-US/ <br />
+stackoverflow : https://stackoverflow.com/ <br />
 express &
-express docs : https://www.npmjs.com/package/express
+express docs : https://www.npmjs.com/package/express <br />
 uuidv4 &
-uuidv4 docs : https://www.npmjs.com/package/uuid4
-Heroku : https://www.heroku.com/
+uuidv4 docs : https://www.npmjs.com/package/uuid4 <br />
+Heroku : https://www.heroku.com/ <br />
 
 
 ## contact me at :
